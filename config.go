@@ -22,7 +22,7 @@ type Config struct {
 	//
 	// 	Packages: map[string][]string{
 	// 		"time": {"Time"},
-	// 		"github.com/pocketbase/pocketbase/core": {"*"},
+	// 		"github.com/hanzoai/backendPB/core": {"*"},
 	// 	}
 	Packages map[string][]string
 

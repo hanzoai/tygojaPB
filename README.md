@@ -1,5 +1,5 @@
 (EXP) tygoja
-[![GoDoc](https://godoc.org/github.com/pocketbase/tygoja?status.svg)](https://pkg.go.dev/github.com/pocketbase/tygoja)
+[![GoDoc](https://godoc.org/github.com/hanzoai/tygojaPB?status.svg)](https://pkg.go.dev/github.com/hanzoai/tygojaPB)
 ======================================================================
 
 **tygoja** is a small helper library for generating TypeScript declarations from Go code.
@@ -40,15 +40,15 @@ import (
     "log"
     "os"
 
-    "github.com/pocketbase/tygoja"
+    "github.com/hanzoai/tygojaPB"
 )
 
 func main() {
     gen := tygoja.New(tygoja.Config{
         Packages: map[string][]string{
-            "github.com/pocketbase/tygoja/test/a": {"*"},
-            "github.com/pocketbase/tygoja/test/b": {"*"},
-            "github.com/pocketbase/tygoja/test/c": {"Example2", "Handler"},
+            "github.com/hanzoai/tygojaPB/test/a": {"*"},
+            "github.com/hanzoai/tygojaPB/test/b": {"*"},
+            "github.com/hanzoai/tygojaPB/test/c": {"Example2", "Handler"},
         },
         Heading:              `declare var $app: c.Handler; // bind other fields `,
         WithPackageFunctions: true,
@@ -69,7 +69,7 @@ You can also combine it with [typedoc](https://typedoc.org/) to create HTML/JSON
 
 See the package `/test` directory for example output.
 
-For a more detailed example you can also explore the [PocketBase's jsvm plugin](https://github.com/pocketbase/pocketbase/tree/develop/plugins/jsvm/internal/docs).
+For a more detailed example you can also explore the [PocketBase's jsvm plugin](https://github.com/hanzoai/backendPB/tree/develop/plugins/jsvm/internal/docs).
 
 
 ## Known issues and limitations

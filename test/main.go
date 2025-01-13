@@ -4,15 +4,15 @@ import (
 	"log"
 	"os"
 
-	"github.com/pocketbase/tygoja"
+	"github.com/hanzoai/tygojaPB"
 )
 
 func main() {
 	gen := tygoja.New(tygoja.Config{
 		Packages: map[string][]string{
-			"github.com/pocketbase/tygoja/test/a": {"*"},
-			"github.com/pocketbase/tygoja/test/b": {"*"},
-			"github.com/pocketbase/tygoja/test/c": {"Example2", "Handler"},
+			"github.com/hanzoai/tygojaPB/test/a": {"*"},
+			"github.com/hanzoai/tygojaPB/test/b": {"*"},
+			"github.com/hanzoai/tygojaPB/test/c": {"Example2", "Handler"},
 		},
 		Heading:              `declare var $app: c.Handler;`,
 		WithPackageFunctions: true,
