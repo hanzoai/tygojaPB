@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	gen := tygoja.New(tygoja.Config{
+	gen := tygojaPB.New(tygojaPB.Config{
 		Packages: map[string][]string{
 			"github.com/hanzoai/tygojaPB/test/a": {"*"},
 			"github.com/hanzoai/tygojaPB/test/b": {"*"},
