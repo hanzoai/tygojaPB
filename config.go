@@ -1,4 +1,4 @@
-package tygoja
+package tygojaPB
 
 const (
 	defaultIndent = "  "
